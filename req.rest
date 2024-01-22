@@ -1,0 +1,23 @@
+http://localhost:5000/callstatus
+
+###
+http://localhost:5000/call
+
+###
+POST http://localhost:5000/complaint
+Content-Type: application/json
+
+{
+    "keterangan": "wifi lemot"
+}
+
+###
+POST http://localhost:5000/createcall
+Content-Type: application/json
+
+{
+    "nama": "West Lobby",
+    "kategori": "Flight",
+    "status": true,
+    "room": "dgr6567g"
+}

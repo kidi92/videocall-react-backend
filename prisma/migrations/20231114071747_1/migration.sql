@@ -1,0 +1,19 @@
+-- CreateTable
+CREATE TABLE `Call` (
+    `id` INTEGER NOT NULL AUTO_INCREMENT,
+    `nama` VARCHAR(191) NOT NULL,
+    `kategori` VARCHAR(191) NOT NULL,
+    `waktu` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    `status` BOOLEAN NOT NULL,
+
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- CreateTable
+CREATE TABLE `Complaint` (
+    `id` INTEGER NOT NULL AUTO_INCREMENT,
+    `keterangan` VARCHAR(191) NOT NULL,
+    `tanggal` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
